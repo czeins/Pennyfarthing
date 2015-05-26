@@ -60,7 +60,6 @@
         });
         // Execute action on hide modal
         $scope.$on('modal.hidden', function() {
-          // Execute action
           var svg = document.getElementById("svg2");
           console.log(svg)
           svg.click();
