@@ -1,4 +1,4 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="false" ng-controller="ApplicationController as app">
   <ion-side-menu-content>
     <ion-nav-bar class="bar bar-header custom-header">
       <ion-nav-back-button>
@@ -6,8 +6,15 @@
 
 
       <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
-        </button>
+        <a class="button-icon button-clear" ng-click="modal.show()">
+        <svg id="svg2" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" snap-test>
+
+          <path fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="bevel" d="m 5.0916789,20.818994 53.8166421,0"/>
+          <path fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0"/>
+          <path fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="bevel" d="m 5.0916788,42.95698 53.8166422,0"/>
+
+        </svg>
+        </a>
       </ion-nav-buttons>
     </ion-nav-bar>
 
