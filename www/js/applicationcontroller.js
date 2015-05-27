@@ -34,17 +34,12 @@
 
       // scroll function
       self.scrollToTop = function(elementId) {
-
         var height = elementId * 52 + (1 * elementId);
 
-        function scroll(height) {
-          $ionicScrollDelegate.scrollTo(0, height);
-        }
+        setTimeout(function() {
+          $ionicScrollDelegate.scrollTo(0, height, true);
+        }, 500);
 
-        setTimeout(scroll(height), 2000);
-
-        // $location.hash(elementId);
-        // $ionicScrollDelegate.scrollTop();
       };
 
       // menu that pops up
