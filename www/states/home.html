@@ -1,16 +1,16 @@
 <ion-view view-title="Home" class="title" ng-controller="ApplicationController as app">
   <ion-content class="home" delegate-handle="scrollTop">
-    
+
     <ion-list>
       <div ng-repeat="group in app.groups" >
         <ion-item class="item-stable"
                 ng-click="app.toggleGroup(group); app.scrollToTop(group.id)"
                   ng-class="{active: app.isGroupShown(group)}">
-          {{group.title}}
+                  {{group.title}}
         </ion-item>
         <ion-item class="item-accordion item-body"
                   ng-show="app.isGroupShown(group)">{{group.content}}
-          
+
         </ion-item>
       </div>
     </ion-list>

@@ -1,7 +1,9 @@
 /* Empty. Add your own CSS if you like */
 .custom-header {
-  background-color: #87CBFF;
+  background-color: #778896;
+  border-bottom: 0px;
 }
+
 .title {
   color: white;
 }
@@ -61,4 +63,22 @@
   bottom: 0;
   margin-top: 44px;
 }
+}
+
+.item.item-stable {
+
+  background-image: url(../img/header/test.jpg);
+  background-size: auto 500px;
+  height: 120px;
+  border: 0;
+
+}
+
+
+
+.item.active.item-stable {
+  height: 200px;
+  -webkit-transition: background-position 1s;
+  transition: background-position 1s;
+  background-position: 0 -100px;
 }

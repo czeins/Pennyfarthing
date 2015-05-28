@@ -34,11 +34,11 @@
 
       // scroll function
       self.scrollToTop = function(elementId) {
-        var height = elementId * 52 + (1 * elementId);
+        var height = 120 * (elementId);
 
         setTimeout(function() {
           $ionicScrollDelegate.scrollTo(0, height, true);
-        }, 500);
+        }, 100);
 
       };
 
