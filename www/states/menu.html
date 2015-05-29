@@ -1,6 +1,5 @@
-<ion-side-menus enable-menu-with-back-views="false" ng-controller="ApplicationController as app">
-  <ion-side-menu-content>
-    <ion-nav-bar class="bar bar-header custom-header">
+
+    <ion-nav-bar class="bar bar-header custom-header" ng-controller="ApplicationController as app">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -19,28 +18,8 @@
     </ion-nav-bar>
 
 
+
+
+
+
     <ion-nav-view name="menuContent"></ion-nav-view>
-
-  </ion-side-menu-content>
-
-  <ion-side-menu side="right">
-      <ion-content>
-        <ion-list>
-        
-          <ion-item nav-clear menu-close href="#/app/about">
-            About
-          </ion-item>
-
-          <ion-item nav-clear menu-close href="#/app/contact">
-            Contact
-          </ion-item>
-
-          <ion-item nav-clear menu-close href="#/app/suggest">
-            Send a suggestion
-          </ion-item>
-
-        </ion-list>
-      </ion-content>
-    </ion-side-menu>
-
-</ion-side-menus>
