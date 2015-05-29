@@ -51,7 +51,6 @@ angular.module('starter', ['ionic'])
   .directive('snapTest', function() {
     return function(scope, element, attrs) {
         var s = Snap(element[0]);
-        console.log(element[0])
         var selected = false;
 
         s.click(function() {

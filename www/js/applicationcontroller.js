@@ -45,7 +45,7 @@
       // menu that pops up
       $ionicModal.fromTemplateUrl('my-modal.html', {
           scope: $scope,
-          animation: 'slide-in-up'
+          animation: 'scale-in'
         }).then(function(modal) {
           $scope.modal = modal;
         });
@@ -64,9 +64,6 @@
         $scope.$on('modal.hidden', function() {
           var svg = document.getElementById("svg2");
           console.log(svg)
-          svg.click();
-          console.log(svg);
-          console.log("hi")
         });
         // Execute action on remove modal
         $scope.$on('modal.removed', function() {
