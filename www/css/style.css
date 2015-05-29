@@ -7,8 +7,8 @@
 .bar .title {
   color: white;
   font-family: 'Pennyfarthing Serif';
-  font-size: 2em;
-  line-height: 49px;
+  /*font-size: 2em;*/
+/*  line-height: 49px;*/
 }
 
 .button-clear.button-clear {
