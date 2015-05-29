@@ -2622,7 +2622,7 @@ body.grade-b, body.grade-c {
 
 .scroll-bar {
   position: absolute;
-  z-index: 9999; }
+  z-index: 8000; }
 
 .ng-animate .scroll-bar {
   visibility: hidden; }
@@ -7321,14 +7321,17 @@ a.button {
   bottom: 0;
   left: 0;
   opacity: 0;
-  z-index: 99999;
+  z-index: 8000;
+
+
+  0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   overflow: hidden; }
 
 .click-block-hide {
-  -webkit-transform: translate3d(-9999px, 0, 0);
-  transform: translate3d(-9999px, 0, 0); }
+  /*-webkit-transform: translate3d(-9999px, 0, 0);*/
+  /*transform: translate3d(-9999px, 0, 0); }*/
 
 .no-resize {
   resize: none; }
