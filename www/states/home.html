@@ -3,7 +3,7 @@
 
     <ion-list>
       <div ng-repeat="group in app.groups" >
-        <ion-item class="item-stable"
+        <ion-item class="item-stable row row-center"
                 ng-click="app.toggleGroup(group); app.scrollToTop(group.id)"
                   ng-class="{active: app.isGroupShown(group)}">
                   <span class="titleText">{{group.title}}</span>

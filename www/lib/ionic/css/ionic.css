@@ -3057,7 +3057,7 @@ a.subdued {
       border: none;
       background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
       background-position: bottom;
-      background-size: 100% 1px;
+      background-size: 100% 0px;
       background-repeat: no-repeat; } }
   .bar.bar-clear {
     border: none;
@@ -5282,8 +5282,8 @@ a.item-content {
  */
 .list {
   position: relative;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 0;
   margin-bottom: 20px; }
 
@@ -7330,8 +7330,8 @@ a.button {
   overflow: hidden; }
 
 .click-block-hide {
-  /*-webkit-transform: translate3d(-9999px, 0, 0);*/
-  /*transform: translate3d(-9999px, 0, 0); }*/
+  -webkit-transform: translate3d(-9999px, 0, 0);
+  transform: translate3d(-9999px, 0, 0); }
 
 .no-resize {
   resize: none; }
