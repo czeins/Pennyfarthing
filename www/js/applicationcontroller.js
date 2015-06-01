@@ -36,15 +36,15 @@
         var s = Snap('#svg2');
         console.log(s);
           if (hamburgerSelected === false) {
-            s.select("path:nth-child(1)").animate({path: "M 12.972944,50.936147 51.027056,12.882035"}, 500);
-            s.select("path:nth-child(2)").animate({opacity: 0}, 500);
-            s.select("path:nth-child(3)").animate({path: "M 12.972944,12.882035 51.027056,50.936147"}, 500);
+            s.select("path:nth-child(1)").animate({path: "M 12.972944,50.936147 51.027056,12.882035", stroke: "#000000"}, 500);
+            s.select("path:nth-child(2)").animate({opacity: 0, stroke: "#000000"}, 500);
+            s.select("path:nth-child(3)").animate({path: "M 12.972944,12.882035 51.027056,50.936147", stroke: "#000000"}, 500);
             hamburgerSelected = true;
           }
           else {
-            s.select("path:nth-child(1)").animate({path: "m 5.0916789,20.818994 53.8166421,0"}, 500);
-            s.select("path:nth-child(2)").animate({opacity: 1}, 500);
-            s.select("path:nth-child(3)").animate({path: "m 5.0916788,42.95698 53.8166422,0"}, 500);
+            s.select("path:nth-child(1)").animate({path: "m 5.0916789,20.818994 53.8166421,0", stroke: "#ffffff"}, 500);
+            s.select("path:nth-child(2)").animate({opacity: 1, stroke: "#ffffff"}, 500);
+            s.select("path:nth-child(3)").animate({path: "m 5.0916788,42.95698 53.8166422,0", stroke: "#ffffff"}, 500);
             hamburgerSelected = false;
           }
         // document.getElementById("svg2").click();

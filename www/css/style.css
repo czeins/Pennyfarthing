@@ -129,16 +129,15 @@
   z-index: 99999;
   position: absolute;
   right: 20px;
-  top: 5px;
+  top: 23px;
 }
 
-#hamburger-path1, #hamburger-path2, #hamburger-path3 {
-
+/*#hamburger-path1, #hamburger-path2, #hamburger-path3 {
   stroke: #000;
-}
+}*/
 
-.modal .list {
-
+.top-list {
+  min-height: 70px;
 }
 
 
