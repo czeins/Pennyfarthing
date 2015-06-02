@@ -7,8 +7,6 @@
 .bar .title {
   color: white;
   font-family: 'Pennyfarthing Serif';
-  /*font-size: 2em;*/
-/*  line-height: 49px;*/
 }
 
 .button-clear.button-clear {
@@ -21,13 +19,13 @@
 
 /* Accordion */
 .list .item.item-accordion {
-  line-height: 38px;
+  height: 600px;
   padding-top: 0;
   padding-bottom: 0;
-  transition: 0.09s all linear;
+  transition: .4s all cubic-bezier(0.12, 0, 0, 1);
 }
 .list .item.item-accordion.ng-hide {
-  line-height: 0px;
+  height: 0px;
 }
 .list .item.item-accordion.ng-hide-add,
 .list .item.item-accordion.ng-hide-remove {
@@ -72,10 +70,16 @@
   src: url('../fonts/Haymaker.ttf') format('truetype'); /* Super Modern Browsers */
 }
 
+.item {
+  border-width: 0;
+  border-style: none;
+}
+
 .item.item-stable {
   background-image: url(../img/header/test.jpg);
   background-size: auto 500px;
   height: 120px;
+  transition: .4s all cubic-bezier(0.12, 0, 0, 1);
   border: 0;
   color: #FFF;
   font-family: 'Brandon';
@@ -95,8 +99,10 @@
 
 .item.active.item-stable {
   height: 200px;
-  -webkit-transition: background-position 1s;
-  transition: background-position 1s;
+  -webkit-transition: 3s background-position cubic-bezier(0.12, 0, 0, 1);
+  transition: 3s background-position cubic-bezier(0.12, 0, 0, 1);
+  -webkit-transition: .4s height cubic-bezier(0.12, 0, 0, 1);
+  transition: .4s height cubic-bezier(0.12, 0, 0, 1);
   background-position: 0 -100px;
 }
 

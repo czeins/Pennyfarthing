@@ -4,25 +4,17 @@
     <ion-list>
       <div ng-repeat="group in app.groups" >
         <ion-item class="item-stable row row-center"
-                ng-click="app.toggleGroup(group); app.scrollToTop(group.id)"
-                  ng-class="{active: app.isGroupShown(group)}">
+                ng-click="app.setVisibility(group.id); app.scrollToTop(group.id); app.toggleGroup(group)"
+                  ng-class="{active: app.isGroupShown(group)}"
+                    ng-show="group.visible">
                   <span class="titleText">{{group.title}}</span>
         </ion-item>
         <ion-item class="item-accordion item-body"
-                  ng-show="app.isGroupShown(group)"><iframe src="../states/1.html"></iframe>
+                  ng-show="app.isGroupShown(group)"><div ng-bind-html="group.content"></div>
 
         </ion-item>
       </div>
     </ion-list>
-
-<svg id="svg" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" snap-test>
-
-  <path fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.0916789,20.818994 53.8166421,0"/>
-  <path fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0"/>
-  <path fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.0916788,42.95698 53.8166422,0"/>
-
-</svg>
-
   </ion-content>
 </ion-view>
 
