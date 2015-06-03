@@ -18,14 +18,11 @@
           .success(function(data){
           var storyLength = data.length;
             for (var i=0; i<storyLength; i++) {
-                var html = $sce.trustAsHtml(data[i].html);
-                var pictureURL = 'https://blooming-falls-8685.herokuapp.com' + data[i].headerimg.url;
-               console.log(data[i].html);
               self.groups[i] = {
                 title: data[i].title,
-                content: html,
+                content: $sce.trustAsHtml(data[i].html),
                 id: i,
-                headerimg: pictureURL,
+                headerimg: data[i].headerimg.url,
                 visible: true
               };
             }
