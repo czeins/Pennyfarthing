@@ -4,9 +4,9 @@
     .module('starter')
     .controller('ApplicationController', ApplicationController);
 
-    ApplicationController.$inject = ['$http', '$stateParams', '$location', '$ionicScrollDelegate', '$ionicModal', '$scope'];
+    ApplicationController.$inject = ['$http', '$stateParams', '$location', '$ionicScrollDelegate', '$ionicModal', '$sce', '$scope'];
 
-    function ApplicationController($http, $stateParams, $location, $ionicScrollDelegate, $ionicModal, $scope) {
+    function ApplicationController($http, $stateParams, $location, $ionicScrollDelegate, $ionicModal, $sce, $scope) {
       var self = this;
       var hamburgerSelected = false;
       self.groups = [];
