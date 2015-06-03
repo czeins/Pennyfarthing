@@ -14,17 +14,18 @@
 
       var html = '';
       function getHtml() {
-        $http.get('https://fast-bastion-6637.herokuapp.com/api/v1/stories/')
+        $http.get('https://blooming-falls-8685.herokuapp.com/api/v1/stories')
           .success(function(data){
-
           var storyLength = data.length;
             for (var i=0; i<storyLength; i++) {
                 var html = data[i].html;
+                var pictureURL = 'https://blooming-falls-8685.herokuapp.com' + data[i].headerimg.url;
                console.log(data[i].html);
               self.groups[i] = {
                 title: data[i].title,
                 content: html,
                 id: i,
+                headerimg: pictureURL,
                 visible: true
               };
             }

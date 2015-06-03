@@ -3,7 +3,7 @@
 
     <ion-list>
       <div ng-repeat="group in app.groups" >
-        <ion-item class="item-stable row row-center"
+        <ion-item style="background-image: url({{group.headerimg}})" class="item-stable row row-center"
                 ng-click="app.setVisibility(group.id); app.scrollToTop(group.id); app.toggleGroup(group)"
                   ng-class="{active: app.isGroupShown(group)}"
                     ng-show="group.visible">
