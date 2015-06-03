@@ -70,6 +70,18 @@
   src: url('../fonts/Haymaker.ttf') format('truetype'); /* Super Modern Browsers */
 }
 
+@font-face {
+  font-family: 'Open-Sans Condensed Bold';
+  src: url('../fonts/OpenSans-CondBold.ttf') format('truetype'); /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Open-Sans Condensed Light';
+  src: url('../fonts/OpenSans-CondLight.ttf') format('truetype'); /* Super Modern Browsers */
+}
+
+
+
 .item {
   border-width: 0;
   border-style: none;
