@@ -11,12 +11,12 @@
       var hamburgerSelected = false;
       self.groups = [];
 
-      
+
       var html = '';
       function getHtml() {
         $http.get('https://fast-bastion-6637.herokuapp.com/api/v1/stories/')
           .success(function(data){
-         
+
           var storyLength = data.length;
             for (var i=0; i<storyLength; i++) {
                 var html = data[i].html;
@@ -41,7 +41,7 @@
         if (clicked === false) {
           for (var q=0; q<self.groups.length; q++) {
             self.groups[q].id === id ? self.groups[q].visible = true : self.groups[q].visible = false;
-          } 
+          }
           clicked = true;
         } else {
             for (var j=0; j<self.groups.length; j++) {
@@ -63,7 +63,7 @@
         return self.shownGroup === group;
       };
 
-      
+
       self.toggleHamburger = function() {
         var s = Snap('#svg2');
         console.log(s);
