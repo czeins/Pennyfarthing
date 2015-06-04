@@ -76,19 +76,7 @@
             s.select("path:nth-child(3)").animate({path: "m 5.0916788,42.95698 53.8166422,0"}, 500);
             hamburgerSelected = false;
           }
-        // document.getElementById("svg2").click();
       }
-
-
-      // scroll function
-      self.scrollToTop = function(elementId) {
-        // var height = 120 * (elementId);
-
-        // setTimeout(function() {
-        //   $ionicScrollDelegate.scrollTo(0, height, true);
-        // }, 100);
-
-      };
 
       var modalShowing = false;
       self.toggleModal = function(){
