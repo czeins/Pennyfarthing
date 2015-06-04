@@ -156,8 +156,7 @@
 ---------------------------*/
 
 .item.item-stable {
-  background-image: url(../img/header/test.jpg);
-  background-size: auto 400px;
+  background-size: 140% auto;
   height: 120px;
   transition: .6s all ease-in-out;
   background-position: 0 -50px;
@@ -179,7 +178,7 @@
 .item.active.item-stable {
   height: 200px;
   transition: .6s all ease-in-out;
-  background-position: 0 -100px;
+  background-position: 0 00px;
 }
 
 .row.ng-hide-add.ng-hide-add-active,
