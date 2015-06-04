@@ -49,20 +49,15 @@
       <ion-modal-view snap-test>
         <ion-content>
           <div id="modal">
+
+
           <ion-list>
           <ion-item nav-clear menu-close ng-click="app.toggleModal(); app.toggleHamburger()" class="top-list modalBG" >
 
           </ion-item>
-          <ion-item nav-clear menu-close href="#/app/aboutus" class="modalBG">
-            About
-          </ion-item>
-
-          <ion-item nav-clear menu-close href="#/app/contact" class="modalBG">
-            Contact
-          </ion-item>
-
-          <ion-item nav-clear menu-close href="#/app/suggest" class="modalBG">
-            Send a suggestion
+          <ion-item nav-clear menu-close ng-click="app.toggleModal(); app.toggleHamburger()" class="modalBG about">
+            <h1>About</h1>
+            <p>Hi we are Claude and Rachel</p>
           </ion-item>
 
         </ion-list>

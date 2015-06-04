@@ -4,9 +4,9 @@
     .module('starter')
     .controller('ApplicationController', ApplicationController);
 
-    ApplicationController.$inject = ['$http', '$stateParams', '$location', '$ionicScrollDelegate', '$ionicModal', '$sce', '$scope'];
+    ApplicationController.$inject = ['$http', '$stateParams', '$location', '$ionicScrollDelegate', '$ionicModal', '$sce', '$scope', '$ionicViewService'];
 
-    function ApplicationController($http, $stateParams, $location, $ionicScrollDelegate, $ionicModal, $sce, $scope) {
+    function ApplicationController($http, $stateParams, $location, $ionicScrollDelegate, $ionicModal, $sce, $scope, $ionicViewService) {
       var self = this;
       var hamburgerSelected = false;
       self.groups = [];
@@ -64,17 +64,16 @@
 
       self.toggleHamburger = function() {
         var s = Snap('#svg2');
-        console.log(s);
           if (hamburgerSelected === false) {
-            s.select("path:nth-child(1)").animate({path: "M 12.972944,50.936147 51.027056,12.882035", stroke: "#000000"}, 500);
-            s.select("path:nth-child(2)").animate({opacity: 0, stroke: "#000000"}, 500);
-            s.select("path:nth-child(3)").animate({path: "M 12.972944,12.882035 51.027056,50.936147", stroke: "#000000"}, 500);
+            s.select("path:nth-child(1)").animate({path: "M 12.972944,50.936147 51.027056,12.882035"}, 500);
+            s.select("path:nth-child(2)").animate({opacity: 0}, 500);
+            s.select("path:nth-child(3)").animate({path: "M 12.972944,12.882035 51.027056,50.936147"}, 500);
             hamburgerSelected = true;
           }
           else {
-            s.select("path:nth-child(1)").animate({path: "m 5.0916789,20.818994 53.8166421,0", stroke: "#ffffff"}, 500);
-            s.select("path:nth-child(2)").animate({opacity: 1, stroke: "#ffffff"}, 500);
-            s.select("path:nth-child(3)").animate({path: "m 5.0916788,42.95698 53.8166422,0", stroke: "#ffffff"}, 500);
+            s.select("path:nth-child(1)").animate({path: "m 5.0916789,20.818994 53.8166421,0"}, 500);
+            s.select("path:nth-child(2)").animate({opacity: 1}, 500);
+            s.select("path:nth-child(3)").animate({path: "m 5.0916788,42.95698 53.8166422,0"}, 500);
             hamburgerSelected = false;
           }
         // document.getElementById("svg2").click();
@@ -94,13 +93,11 @@
       var modalShowing = false;
       self.toggleModal = function(){
         if (!modalShowing) {
-          console.log("hi")
           $scope.modal.show();
           modalShowing = true;
         }
         else {
           $scope.modal.hide();
-          console.log("bye")
           modalShowing = false;
         }
       }
@@ -126,7 +123,6 @@
         // Execute action on hide modal
         $scope.$on('modal.hidden', function() {
           var svg = document.getElementById("svg2");
-          console.log(svg)
         });
         // Execute action on remove modal
         $scope.$on('modal.removed', function() {
