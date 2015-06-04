@@ -1,9 +1,9 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ios-sim' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ionic' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose cache add [ 'ios-sim', null ]
-5 verbose cache add name=undefined spec="ios-sim" args=["ios-sim",null]
+4 verbose cache add [ 'ionic', null ]
+5 verbose cache add name=undefined spec="ionic" args=["ionic",null]
 6 verbose parsed url { protocol: null,
 6 verbose parsed url   slashes: null,
 6 verbose parsed url   auth: null,
@@ -13,133 +13,285 @@
 6 verbose parsed url   hash: null,
 6 verbose parsed url   search: null,
 6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'ios-sim',
-6 verbose parsed url   path: 'ios-sim',
-6 verbose parsed url   href: 'ios-sim' }
-7 silly lockFile 6af69284-ios-sim ios-sim
-8 verbose lock ios-sim /Users/claude/.npm/6af69284-ios-sim.lock
-9 silly lockFile 6af69284-ios-sim ios-sim
-10 silly lockFile 6af69284-ios-sim ios-sim
-11 verbose addNamed [ 'ios-sim', '' ]
+6 verbose parsed url   pathname: 'ionic',
+6 verbose parsed url   path: 'ionic',
+6 verbose parsed url   href: 'ionic' }
+7 silly lockFile 00d10074-ionic ionic
+8 verbose lock ionic /Users/claude/.npm/00d10074-ionic.lock
+9 silly lockFile 00d10074-ionic ionic
+10 silly lockFile 00d10074-ionic ionic
+11 verbose addNamed [ 'ionic', '' ]
 12 verbose addNamed [ null, '*' ]
-13 silly lockFile 03dce7cc-ios-sim ios-sim@
-14 verbose lock ios-sim@ /Users/claude/.npm/03dce7cc-ios-sim.lock
-15 silly addNameRange { name: 'ios-sim', range: '*', hasData: false }
-16 verbose request where is /ios-sim
+13 silly lockFile 966fc04a-ionic ionic@
+14 verbose lock ionic@ /Users/claude/.npm/966fc04a-ionic.lock
+15 silly addNameRange { name: 'ionic', range: '*', hasData: false }
+16 verbose request where is /ionic
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 8f01a819b1c839b1
-19 verbose url raw /ios-sim
-20 verbose url resolving [ 'https://registry.npmjs.org/', './ios-sim' ]
-21 verbose url resolved https://registry.npmjs.org/ios-sim
-22 verbose request where is https://registry.npmjs.org/ios-sim
-23 info trying registry request attempt 1 at 16:22:57
-24 http GET https://registry.npmjs.org/ios-sim
-25 http 200 https://registry.npmjs.org/ios-sim
-26 silly registry.get cb [ 200,
-26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-26 silly registry.get     etag: '"1H76UOC6W9Z8XWWIXSB6N1P9A"',
-26 silly registry.get     'content-type': 'application/json',
-26 silly registry.get     'cache-control': 'max-age=60',
-26 silly registry.get     'content-length': '15537',
-26 silly registry.get     'accept-ranges': 'bytes',
-26 silly registry.get     date: 'Tue, 26 May 2015 23:22:57 GMT',
-26 silly registry.get     via: '1.1 varnish',
-26 silly registry.get     age: '0',
-26 silly registry.get     connection: 'keep-alive',
-26 silly registry.get     'x-served-by': 'cache-lax1432-LAX',
-26 silly registry.get     'x-cache': 'HIT',
-26 silly registry.get     'x-cache-hits': '1',
-26 silly registry.get     'x-timer': 'S1432682577.889946,VS0,VE81',
-26 silly registry.get     vary: 'Accept' } ]
-27 silly addNameRange number 2 { name: 'ios-sim', range: '*', hasData: true }
-28 silly addNameRange versions [ 'ios-sim',
-28 silly addNameRange   [ '1.8.0',
-28 silly addNameRange     '1.8.1',
-28 silly addNameRange     '1.8.2',
-28 silly addNameRange     '1.9.0',
-28 silly addNameRange     '2.0.0',
-28 silly addNameRange     '2.0.1',
-28 silly addNameRange     '3.0.0',
-28 silly addNameRange     '3.1.0',
-28 silly addNameRange     '3.1.1',
-28 silly addNameRange     '4.1.0' ] ]
-29 verbose addNamed [ 'ios-sim', '3.1.1' ]
-30 verbose addNamed [ '3.1.1', '3.1.1' ]
-31 silly lockFile 022ac800-ios-sim-3-1-1 ios-sim@3.1.1
-32 verbose lock ios-sim@3.1.1 /Users/claude/.npm/022ac800-ios-sim-3-1-1.lock
-33 silly lockFile 94b6d454-js-org-ios-sim-ios-sim-3-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-34 verbose lock https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz /Users/claude/.npm/94b6d454-js-org-ios-sim-ios-sim-3-1-1-tgz.lock
-35 verbose addRemoteTarball [ 'https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz',
-35 verbose addRemoteTarball   '1129c3fda31b917ef656b8c53fd276392b51c6e8' ]
-36 info retry fetch attempt 1 at 16:22:58
-37 verbose fetch to= /var/folders/48/dzhyhc7s70qftrv09sk93vbh0000gn/T/npm-6344-iCXeH7MU/registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-38 http GET https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-39 http 200 https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-40 silly lockFile 94b6d454-js-org-ios-sim-ios-sim-3-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-41 silly lockFile 94b6d454-js-org-ios-sim-ios-sim-3-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz
-42 silly lockFile 022ac800-ios-sim-3-1-1 ios-sim@3.1.1
-43 silly lockFile 022ac800-ios-sim-3-1-1 ios-sim@3.1.1
-44 silly lockFile 03dce7cc-ios-sim ios-sim@
-45 silly lockFile 03dce7cc-ios-sim ios-sim@
-46 silly resolved [ { name: 'ios-sim',
-46 silly resolved     version: '3.1.1',
-46 silly resolved     description: 'launch iOS apps into the iOS Simulator from the command line (Xcode 6.0)',
-46 silly resolved     main: 'ios-sim',
-46 silly resolved     scripts: { preinstall: 'rake build' },
-46 silly resolved     bin: { 'ios-sim': 'build/Release/ios-sim' },
-46 silly resolved     repository: { type: 'git', url: 'https://github.com/phonegap/ios-sim' },
-46 silly resolved     keywords: [ 'ios-sim', 'iOS Simulator' ],
-46 silly resolved     author: { name: 'Landon Fuller, Jeff Haynie, Eloy Duran, Shazron Abdullah' },
-46 silly resolved     license: 'MIT',
-46 silly resolved     gitHead: 'c6ec64397e5fa462f1ea2d4e4fdc123a856618f9',
-46 silly resolved     bugs: { url: 'https://github.com/phonegap/ios-sim/issues' },
-46 silly resolved     homepage: 'https://github.com/phonegap/ios-sim',
-46 silly resolved     _id: 'ios-sim@3.1.1',
-46 silly resolved     _shasum: '1129c3fda31b917ef656b8c53fd276392b51c6e8',
-46 silly resolved     _from: 'ios-sim@',
-46 silly resolved     _npmVersion: '1.4.14',
-46 silly resolved     _npmUser: { name: 'shazron', email: 'shazron@gmail.com' },
-46 silly resolved     maintainers: [ [Object] ],
-46 silly resolved     dist:
-46 silly resolved      { shasum: '1129c3fda31b917ef656b8c53fd276392b51c6e8',
-46 silly resolved        tarball: 'http://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz' },
-46 silly resolved     directories: {},
-46 silly resolved     _resolved: 'https://registry.npmjs.org/ios-sim/-/ios-sim-3.1.1.tgz' } ]
-47 info install ios-sim@3.1.1 into /usr/local/lib
-48 info installOne ios-sim@3.1.1
-49 verbose lib/node_modules/ios-sim unbuild
-50 verbose tar unpack /Users/claude/.npm/ios-sim/3.1.1/package.tgz
-51 silly lockFile 5027580f-r-local-lib-node-modules-ios-sim tar:///usr/local/lib/node_modules/ios-sim
-52 verbose lock tar:///usr/local/lib/node_modules/ios-sim /Users/claude/.npm/5027580f-r-local-lib-node-modules-ios-sim.lock
-53 silly lockFile 49bdfaa0-de-npm-ios-sim-3-1-1-package-tgz tar:///Users/claude/.npm/ios-sim/3.1.1/package.tgz
-54 verbose lock tar:///Users/claude/.npm/ios-sim/3.1.1/package.tgz /Users/claude/.npm/49bdfaa0-de-npm-ios-sim-3-1-1-package-tgz.lock
-55 silly gunzTarPerm modes [ '755', '644' ]
-56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
-56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim']
-56 error   errno: 3,
-56 error   code: 'EACCES',
-56 error   path: '/usr/local/lib/node_modules/ios-sim',
-56 error   fstream_type: 'Directory',
-56 error   fstream_path: '/usr/local/lib/node_modules/ios-sim',
-56 error   fstream_class: 'DirWriter',
-56 error   fstream_stack:
-56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-56 error      'Object.oncomplete (fs.js:107:15)' ] }
-57 error Please try running this command again as root/Administrator.
-58 error System Darwin 14.4.0
-59 error command "node" "/usr/local/bin/npm" "install" "-g" "ios-sim"
-60 error cwd /Users/claude/Desktop/Pennyfarthing
-61 error node -v v0.10.33
-62 error npm -v 1.4.28
-63 error path /usr/local/lib/node_modules/ios-sim
-64 error fstream_path /usr/local/lib/node_modules/ios-sim
-65 error fstream_type Directory
-66 error fstream_class DirWriter
-67 error code EACCES
-68 error errno 3
-69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
-70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-70 error fstream_stack Object.oncomplete (fs.js:107:15)
-71 verbose exit [ 3, true ]
+18 verbose request id 822e7fe7c221aabc
+19 verbose url raw /ionic
+20 verbose url resolving [ 'https://registry.npmjs.org/', './ionic' ]
+21 verbose url resolved https://registry.npmjs.org/ionic
+22 verbose request where is https://registry.npmjs.org/ionic
+23 info trying registry request attempt 1 at 16:51:54
+24 verbose etag "95IYCZVBX032NQI1TP8RY7S1D"
+25 http GET https://registry.npmjs.org/ionic
+26 http 200 https://registry.npmjs.org/ionic
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"937PQJDWRY7RD6BB7VAN05TDH"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '409128',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Wed, 03 Jun 2015 23:51:55 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '9',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sjc3125-SJC',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1433375515.244268,VS0,VE1',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'ionic', range: '*', hasData: true }
+29 silly addNameRange versions [ 'ionic',
+29 silly addNameRange   [ '0.9.6',
+29 silly addNameRange     '0.9.8',
+29 silly addNameRange     '0.9.9',
+29 silly addNameRange     '0.9.10',
+29 silly addNameRange     '0.9.11',
+29 silly addNameRange     '0.9.12',
+29 silly addNameRange     '0.9.13',
+29 silly addNameRange     '0.9.14',
+29 silly addNameRange     '0.9.15',
+29 silly addNameRange     '0.9.16',
+29 silly addNameRange     '1.0.0-beta.1',
+29 silly addNameRange     '1.0.0-beta',
+29 silly addNameRange     '1.0.1-beta',
+29 silly addNameRange     '1.0.3-beta',
+29 silly addNameRange     '1.0.4',
+29 silly addNameRange     '1.0.5',
+29 silly addNameRange     '1.0.6',
+29 silly addNameRange     '1.0.7',
+29 silly addNameRange     '1.0.8',
+29 silly addNameRange     '1.0.9',
+29 silly addNameRange     '1.0.10',
+29 silly addNameRange     '1.0.11',
+29 silly addNameRange     '1.0.12',
+29 silly addNameRange     '1.0.13',
+29 silly addNameRange     '1.0.14',
+29 silly addNameRange     '1.0.15',
+29 silly addNameRange     '1.0.16',
+29 silly addNameRange     '1.0.17',
+29 silly addNameRange     '1.1.0-beta1',
+29 silly addNameRange     '1.1.0-beta2',
+29 silly addNameRange     '1.1.0-beta3',
+29 silly addNameRange     '1.1.0-beta4',
+29 silly addNameRange     '1.1.0-beta5',
+29 silly addNameRange     '1.1.0-beta6',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1-beta1',
+29 silly addNameRange     '1.1.1-beta2',
+29 silly addNameRange     '1.1.1-beta3',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.1.3',
+29 silly addNameRange     '1.1.4',
+29 silly addNameRange     '1.1.5-beta1',
+29 silly addNameRange     '1.1.5-beta2',
+29 silly addNameRange     '1.1.5-beta3',
+29 silly addNameRange     '1.1.5-beta4',
+29 silly addNameRange     '1.1.5-beta5',
+29 silly addNameRange     '1.1.5',
+29 silly addNameRange     '1.1.6',
+29 silly addNameRange     '1.1.7-beta1',
+29 silly addNameRange     '1.1.7',
+29 silly addNameRange     '1.1.8-beta1',
+29 silly addNameRange     '1.1.8-beta2',
+29 silly addNameRange     '1.1.8-beta3',
+29 silly addNameRange     '1.1.8-beta4',
+29 silly addNameRange     '1.1.8-beta5',
+29 silly addNameRange     '1.1.8',
+29 silly addNameRange     '1.1.9-beta1',
+29 silly addNameRange     '1.1.9',
+29 silly addNameRange     '1.1.10',
+29 silly addNameRange     '1.1.11-beta1',
+29 silly addNameRange     '1.1.11-beta2',
+29 silly addNameRange     '1.1.11',
+29 silly addNameRange     '1.1.12-beta1',
+29 silly addNameRange     '1.1.12-beta2',
+29 silly addNameRange     '1.1.12-beta3',
+29 silly addNameRange     '1.1.12',
+29 silly addNameRange     '1.1.13',
+29 silly addNameRange     '1.1.14-beta1',
+29 silly addNameRange     '1.1.14-beta2',
+29 silly addNameRange     '1.1.14-beta3',
+29 silly addNameRange     '1.2.0-beta1',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1-beta1',
+29 silly addNameRange     '1.2.1-beta2',
+29 silly addNameRange     '1.2.1-beta3',
+29 silly addNameRange     '1.2.1-beta4',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.2.2',
+29 silly addNameRange     '1.2.3-beta1',
+29 silly addNameRange     '1.2.3-beta2',
+29 silly addNameRange     '1.2.3-beta3',
+29 silly addNameRange     '1.2.3',
+29 silly addNameRange     '1.2.4-beta1',
+29 silly addNameRange     '1.2.4-beta2',
+29 silly addNameRange     '1.2.4-beta3',
+29 silly addNameRange     '1.2.4',
+29 silly addNameRange     '1.2.5-beta1',
+29 silly addNameRange     '1.2.5-beta2',
+29 silly addNameRange     '1.2.5-beta3',
+29 silly addNameRange     '1.2.5',
+29 silly addNameRange     '1.2.6-beta1',
+29 silly addNameRange     '1.2.6-beta2',
+29 silly addNameRange     '1.2.6-beta3',
+29 silly addNameRange     '1.2.6',
+29 silly addNameRange     '1.2.7',
+29 silly addNameRange     '1.2.8-beta1',
+29 silly addNameRange     '1.2.8-beta2',
+29 silly addNameRange     '1.2.8',
+29 silly addNameRange     '1.2.9',
+29 silly addNameRange     '1.2.10',
+29 silly addNameRange     '1.2.11',
+29 silly addNameRange     '1.2.12',
+29 silly addNameRange     '1.2.13',
+29 silly addNameRange     '1.2.14-beta1',
+29 silly addNameRange     '1.2.14-beta2',
+29 silly addNameRange     '1.2.14-beta3',
+29 silly addNameRange     '1.2.14-beta4',
+29 silly addNameRange     '1.2.14-beta5',
+29 silly addNameRange     '1.2.14-beta6',
+29 silly addNameRange     '1.2.14',
+29 silly addNameRange     '1.3.0-beta1',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.3.1',
+29 silly addNameRange     '1.3.2',
+29 silly addNameRange     '1.3.3',
+29 silly addNameRange     '1.3.4',
+29 silly addNameRange     '1.3.5',
+29 silly addNameRange     '1.3.6',
+29 silly addNameRange     '1.3.7',
+29 silly addNameRange     '1.3.8',
+29 silly addNameRange     '1.3.9',
+29 silly addNameRange     '1.3.10',
+29 silly addNameRange     '1.4.0-alpha.1',
+29 silly addNameRange     '1.3.11',
+29 silly addNameRange     '1.3.1-1.alpha.0',
+29 silly addNameRange     '1.4.0-alpha.2',
+29 silly addNameRange     '1.3.12',
+29 silly addNameRange     '1.3.12-beta.1',
+29 silly addNameRange     '1.3.12-beta.2',
+29 silly addNameRange     '1.3.13-beta.0',
+29 silly addNameRange     '1.3.1-3.beta.1',
+29 silly addNameRange     '1.3.1-3.beta.2',
+29 silly addNameRange     '1.3.13',
+29 silly addNameRange     '1.3.1-3.beta.4',
+29 silly addNameRange     '1.3.14-beta',
+29 silly addNameRange     '1.3.14-beta.1',
+29 silly addNameRange     '1.4.0-alpha.3',
+29 silly addNameRange     '1.3.14',
+29 silly addNameRange     '1.4.0-alpha.4',
+29 silly addNameRange     '1.4.0-alpha.5',
+29 silly addNameRange     '1.3.15-beta.0',
+29 silly addNameRange     '1.3.15-beta.1',
+29 silly addNameRange     '1.3.15-beta.2',
+29 silly addNameRange     '1.3.15-beta.3',
+29 silly addNameRange     '1.3.15-beta.4',
+29 silly addNameRange     '1.3.15',
+29 silly addNameRange     '1.3.16',
+29 silly addNameRange     '1.4.0-alpha.6',
+29 silly addNameRange     '1.3.17-beta.0',
+29 silly addNameRange     '1.3.17-beta.1',
+29 silly addNameRange     '1.3.17-beta.2',
+29 silly addNameRange     '1.3.17-beta.3',
+29 silly addNameRange     '1.3.1-7.beta.4',
+29 silly addNameRange     '1.3.17',
+29 silly addNameRange     '1.3.18-beta.0',
+29 silly addNameRange     '1.3.18-beta.1',
+29 silly addNameRange     '1.3.18-beta.2',
+29 silly addNameRange     '1.3.18-beta.3',
+29 silly addNameRange     '1.3.18',
+29 silly addNameRange     '1.3.19-beta.0',
+29 silly addNameRange     '1.3.19-beta.1',
+29 silly addNameRange     '1.3.19-beta.2',
+29 silly addNameRange     '1.3.19-beta.3',
+29 silly addNameRange     '1.3.19-beta.4',
+29 silly addNameRange     '1.3.19',
+29 silly addNameRange     '1.3.20',
+29 silly addNameRange     '1.4.1-beta.0',
+29 silly addNameRange     '1.4.0-beta.1',
+29 silly addNameRange     '1.4.0-beta.2',
+29 silly addNameRange     '1.4.0-beta.3',
+29 silly addNameRange     '1.4.0-beta.5',
+29 silly addNameRange     '1.4.0-beta.6',
+29 silly addNameRange     '1.4.0-beta.7',
+29 silly addNameRange     '1.3.21-beta.0',
+29 silly addNameRange     '1.3.21-beta.1',
+29 silly addNameRange     '1.3.21',
+29 silly addNameRange     '1.3.22',
+29 silly addNameRange     '1.4.0-beta.8',
+29 silly addNameRange     '1.4.0-beta.9',
+29 silly addNameRange     '1.4.0-beta.10',
+29 silly addNameRange     '1.4.0-beta.11',
+29 silly addNameRange     '1.4.0-beta.12',
+29 silly addNameRange     '1.4.0-beta.13',
+29 silly addNameRange     '1.4.0-beta.14',
+29 silly addNameRange     '1.4.0-beta.15',
+29 silly addNameRange     '1.4.0-beta.16',
+29 silly addNameRange     '1.4.0-beta.17',
+29 silly addNameRange     '1.4.0-beta.18',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.4.1',
+29 silly addNameRange     '1.4.2',
+29 silly addNameRange     '1.4.3',
+29 silly addNameRange     '1.4.4-beta.0',
+29 silly addNameRange     '1.4.4-beta.2',
+29 silly addNameRange     '1.4.4',
+29 silly addNameRange     '1.4.5-beta.0',
+29 silly addNameRange     '1.4.5-beta.1',
+29 silly addNameRange     '1.4.5-beta.2',
+29 silly addNameRange     '1.4.5-beta.3',
+29 silly addNameRange     '1.4.5',
+29 silly addNameRange     '1.4.6-beta.0',
+29 silly addNameRange     '1.4.6',
+29 silly addNameRange     '1.4.7',
+29 silly addNameRange     '1.4.8',
+29 silly addNameRange     '1.5.0-beta.0',
+29 silly addNameRange     '1.5.0-beta.1',
+29 silly addNameRange     '1.5.0' ] ]
+30 verbose addNamed [ 'ionic', '1.5.0' ]
+31 verbose addNamed [ '1.5.0', '1.5.0' ]
+32 silly lockFile cd515cb7-ionic-1-5-0 ionic@1.5.0
+33 verbose lock ionic@1.5.0 /Users/claude/.npm/cd515cb7-ionic-1-5-0.lock
+34 silly lockFile c951377e--npmjs-org-ionic-ionic-1-5-0-tgz https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+35 verbose lock https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz /Users/claude/.npm/c951377e--npmjs-org-ionic-ionic-1-5-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz',
+36 verbose addRemoteTarball   '9777e0724a447f277c2e51c89f550e2f5ea54c35' ]
+37 info retry fetch attempt 1 at 16:51:55
+38 verbose fetch to= /var/folders/48/dzhyhc7s70qftrv09sk93vbh0000gn/T/npm-48160-bPFP2ZRX/registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+39 http GET https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+40 http 200 https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+41 silly lockFile c951377e--npmjs-org-ionic-ionic-1-5-0-tgz https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+42 silly lockFile c951377e--npmjs-org-ionic-ionic-1-5-0-tgz https://registry.npmjs.org/ionic/-/ionic-1.5.0.tgz
+43 silly lockFile cd515cb7-ionic-1-5-0 ionic@1.5.0
+44 silly lockFile cd515cb7-ionic-1-5-0 ionic@1.5.0
+45 silly lockFile 966fc04a-ionic ionic@
+46 silly lockFile 966fc04a-ionic ionic@
+47 error Error: EACCES, mkdir '/Users/claude/.npm/ionic/1.5.0'
+47 error  { [Error: EACCES, mkdir '/Users/claude/.npm/ionic/1.5.0']
+47 error   errno: 3,
+47 error   code: 'EACCES',
+47 error   path: '/Users/claude/.npm/ionic/1.5.0' }
+48 error Please try running this command again as root/Administrator.
+49 error System Darwin 14.4.0
+50 error command "node" "/usr/local/bin/npm" "install" "-g" "ionic"
+51 error cwd /Users/claude/Desktop/Pennyfarthing
+52 error node -v v0.10.33
+53 error npm -v 1.4.28
+54 error path /Users/claude/.npm/ionic/1.5.0
+55 error code EACCES
+56 error errno 3
+57 error stack Error: EACCES, mkdir '/Users/claude/.npm/ionic/1.5.0'
+58 verbose exit [ 3, true ]

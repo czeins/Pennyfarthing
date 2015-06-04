@@ -19,7 +19,6 @@
 
 /* Accordion */
 .list .item.item-accordion {
-  height: 600px;
   padding-top: 0;
   padding-bottom: 0;
   transition: .4s all cubic-bezier(0.12, 0, 0, 1);
@@ -71,6 +70,11 @@
 }
 
 @font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype'); /* Super Modern Browsers */
+}
+
+@font-face {
   font-family: 'Open-Sans Condensed Bold';
   src: url('../fonts/OpenSans-CondBold.ttf') format('truetype'); /* Super Modern Browsers */
 }
@@ -87,16 +91,19 @@
   border-style: none;
 }
 
+/* TITLE BARS WITH BACKGROUND */
+
 .item.item-stable {
   background-image: url(../img/header/test.jpg);
-  background-size: auto 500px;
+  background-size: auto 400px;
   height: 120px;
   transition: .6s all ease-in-out;
+  background-position: 0 -50px;
   border: 0;
   color: #FFF;
   font-family: 'Brandon';
   font-weight: 900;
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-align: center;
   width:100%;
@@ -106,6 +113,8 @@
 .titleText {
   margin: 0 auto;
 }
+
+/* TITLE BARS WITH BACKGROUND */
 
 .item.active.item-stable {
   height: 200px;
