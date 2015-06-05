@@ -118,22 +118,15 @@
 }
 
 .person {
-  width: 45%;
+  width: 50%;
   float: left;
   margin-top: 20px;
 }
 
-.plus {
-  width: 10%;
-  float: left;
-  font-size: 3em;
-  line-height: 3em;
-  margin-top: 40px;
-}
 
 .profileimg {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   padding: 5px;
   border: 1px dashed #fff;
@@ -145,6 +138,12 @@
   background-color: #fff;
   color: #778896 !important;
   padding: 15px;
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: bold;
+  line-height: 1.4em;
 }
 
 /*--------------------------
@@ -212,7 +211,11 @@
 .item.active.item-stable {
   height: 200px;
   transition: .6s all ease-in-out;
-  background-position: 0 00px;
+  background-position: 0 0px;
+}
+
+.item.activated {
+  font-size: 1.5rem;
 }
 
 .row.ng-hide-add.ng-hide-add-active,
