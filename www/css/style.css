@@ -95,7 +95,7 @@
   font-family: 'Brandon';
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1.3em !important;
 }
 
 .top-list {
@@ -190,7 +190,7 @@
 
 .item.item-stable {
   background-size: 140% auto;
-  height: 120px;
+  height: 122px;
   transition: .6s all ease-in-out;
   background-position: 0 -50px;
   border: 0;
@@ -212,10 +212,6 @@
   height: 200px;
   transition: .6s all ease-in-out;
   background-position: 0 0px;
-}
-
-.item.activated {
-  font-size: 1.5rem;
 }
 
 .row.ng-hide-add.ng-hide-add-active,
